@@ -27,7 +27,7 @@ export default function Landing() {
     };
   }, []);
 
-  const textVariants: Variants = {
+  const textVariants: any = {
     initial: {
       opacity: 0,
       scale: isMobile ? 0.4 : 0.25,
@@ -57,7 +57,7 @@ export default function Landing() {
     }
   };
 
-  const bgVariants: Variants = {
+  const bgVariants: any = {
     initial: { opacity: 0 },
     stage3: { opacity: 1, transition: { duration: 1.5, delay: 1, ease: "easeInOut" } }
   };
