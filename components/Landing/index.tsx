@@ -10,7 +10,7 @@ export default function Landing() {
   useEffect(() => {
     const isMob = window.innerWidth <= 768;
     setIsMobile(isMob);
-    
+
     // Animation sequence
     // Stage 0: Initial black screen
     // Stage 1: "Alekseev" drops from top to center, opacity fades in early
@@ -37,7 +37,7 @@ export default function Landing() {
       opacity: isMobile ? 0.4 : 0.2,
       scale: isMobile ? 0.4 : 0.25,
       y: "-45vh",
-      transition: { 
+      transition: {
         y: { duration: isMobile ? 1.5 : 2, ease: "easeOut" },
         opacity: { duration: 0.5, ease: "linear" }
       }
@@ -71,7 +71,7 @@ export default function Landing() {
 
   return (
     <main className={styles.landing}>
-      <motion.div 
+      <motion.div
         className={styles.layoutContent}
         variants={bgVariants}
         initial="initial"
@@ -79,29 +79,29 @@ export default function Landing() {
       >
         <div className={styles.topSection}>
           <h1>
-            Pattern Dimensions<br/>
-            and Moments that<br/>
-            Connect and Leave a<br/>
+            Pattern Dimensions<br />
+            and Moments that<br />
+            Connect and Leave a<br />
             Bold イメージ.
           </h1>
         </div>
 
         <div className={styles.mobileImageContainer}>
-           <img src="https://images.unsplash.com/photo-1600697395543-ef3ee6e9af7b?q=80&w=1000&auto=format&fit=crop&grayscale" alt="dummy" />
+          <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1000&auto=format&fit=crop&grayscale" alt="dummy" />
         </div>
 
-        <motion.div 
+        <motion.div
           className={styles.middleBar}
           initial={{ scaleY: 0 }}
           animate={stage === 3 ? { scaleY: 1 } : { scaleY: 0 }}
           transition={{ duration: 1.5, delay: 1, ease: [0.76, 0, 0.24, 1] }}
         >
-          <motion.span initial={{opacity: 0}} animate={stage === 3 ? {opacity: 1} : {opacity: 0}} transition={{duration: 1, delay: 2}}>Art Direction</motion.span>
-          <motion.span initial={{opacity: 0}} animate={stage === 3 ? {opacity: 1} : {opacity: 0}} transition={{duration: 1, delay: 2.1}}>web design</motion.span>
-          <motion.span initial={{opacity: 0}} animate={stage === 3 ? {opacity: 1} : {opacity: 0}} transition={{duration: 1, delay: 2.2}}>Frontend</motion.span>
-          <motion.span initial={{opacity: 0}} animate={stage === 3 ? {opacity: 1} : {opacity: 0}} transition={{duration: 1, delay: 2.3}}>Fullstack</motion.span>
+          <motion.span initial={{ opacity: 0 }} animate={stage === 3 ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 1, delay: 2 }}>Art Direction</motion.span>
+          <motion.span initial={{ opacity: 0 }} animate={stage === 3 ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 1, delay: 2.1 }}>Web Design</motion.span>
+          <motion.span initial={{ opacity: 0 }} animate={stage === 3 ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 1, delay: 2.2 }}>Graphic Designer</motion.span>
+          <motion.span initial={{ opacity: 0 }} animate={stage === 3 ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 1, delay: 2.3 }}>Frontend</motion.span>
         </motion.div>
-        <motion.div 
+        <motion.div
           className={styles.divider}
           initial={{ scaleX: 0 }}
           animate={stage === 3 ? { scaleX: 1 } : { scaleX: 0 }}
@@ -110,7 +110,7 @@ export default function Landing() {
       </motion.div>
 
       <div className={styles.titleContainer}>
-        <motion.h1 
+        <motion.h1
           className={styles.alekseev}
           variants={textVariants}
           initial="initial"
@@ -120,7 +120,7 @@ export default function Landing() {
         </motion.h1>
       </div>
 
-      <motion.div 
+      <motion.div
         className={styles.bottomBar}
         variants={bgVariants}
         initial="initial"

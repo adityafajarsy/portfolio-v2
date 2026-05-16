@@ -99,6 +99,7 @@ export default function Home() {
                     src={`/images/${src}`}
                     width={300}
                     height={0}
+                    style={{ height: "auto" }}
                     alt="image"
                     />
                 </div>

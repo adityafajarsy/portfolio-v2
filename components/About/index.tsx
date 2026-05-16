@@ -58,7 +58,7 @@ export default function About() {
             transformPerspective: 1500
           }}
         >
-          <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=1000&auto=format&fit=crop&grayscale" alt="portrait" />
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop&grayscale" alt="portrait" />
         </motion.div>
       </div>
     </section>

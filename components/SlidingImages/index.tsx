@@ -65,7 +65,9 @@ export default function index() {
                                     <Image 
                                     fill={true}
                                     alt={"image"}
-                                    src={`/images/${project.src}`}/>
+                                    src={`/images/${project.src}`}
+                                    sizes="(max-width: 768px) 100vw, 25vw"
+                                    />
                                 </div>
                             </div>
                         })
@@ -79,7 +81,9 @@ export default function index() {
                                     <Image 
                                     fill={true}
                                     alt={"image"}
-                                    src={`/images/${project.src}`}/>
+                                    src={`/images/${project.src}`}
+                                    sizes="(max-width: 768px) 100vw, 25vw"
+                                    />
                                 </div>
                             </div>
                         })

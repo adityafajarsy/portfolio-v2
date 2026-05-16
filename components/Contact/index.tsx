@@ -26,6 +26,7 @@ export default function index() {
                             fill={true}
                             alt={"image"}
                             src={`/images/background.jpg`}
+                            sizes="(max-width: 768px) 70px, 100px"
                             />
                         </div>
                         <h2>Let's work</h2>
