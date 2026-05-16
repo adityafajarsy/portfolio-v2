@@ -1,6 +1,6 @@
 'use client';
 import styles from './style.module.scss';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 export default function Landing() {
@@ -27,7 +27,7 @@ export default function Landing() {
     };
   }, []);
 
-  const textVariants = {
+  const textVariants: Variants = {
     initial: {
       opacity: 0,
       scale: isMobile ? 0.4 : 0.25,
@@ -57,7 +57,7 @@ export default function Landing() {
     }
   };
 
-  const bgVariants = {
+  const bgVariants: Variants = {
     initial: { opacity: 0 },
     stage3: { opacity: 1, transition: { duration: 1.5, delay: 1, ease: "easeInOut" } }
   };
