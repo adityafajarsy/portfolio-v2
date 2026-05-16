@@ -25,6 +25,7 @@ export default function Home() {
 
       setTimeout(() => {
         document.body.style.cursor = 'default';
+        document.body.style.overflow = 'auto';
         window.scrollTo(0, 0);
       }, 2000);
     })();
